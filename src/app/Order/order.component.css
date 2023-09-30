@@ -1,0 +1,21 @@
+#divs {
+    height: 250px;
+}
+
+#imgs {
+    height: 150px;
+    width: 150px
+}
+
+#example2 {
+    height: 50%;
+    width: 50%
+}
+
+#id1 {
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 5px 10px #e6e6e6
+}
+
+#bttn {}

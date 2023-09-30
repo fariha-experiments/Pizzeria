@@ -1,0 +1,66 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <title>app</title>
+
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+    <nav class="navbar navbar-inverse">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+
+                <a class="navbar-brand" routerLink="/home">Pizzeria</a>
+
+            </div>
+
+            <ul class="nav navbar-nav">
+
+                <li> <img src="../assets/PizzeriaLogo.png" id="pizimg" alt="" routerLink="home"> </li>
+
+                <li><a routerLink="order">Order Pizza</a></li>
+
+                <li><a routerLink="build">Build Your Pizza</a></li>
+
+            </ul>
+            <div class="pull-right">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li> <button type="button" id="marg" routerLink="cart" class="btn btn-warning" align="center"><span class="glyphicon glyphicon-shopping-cart" ></span> Your Cart</button></li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <router-outlet></router-outlet>
+    <div>
+        <footer>
+            <i>Copyrights @ 2017 Pizzeria. Allright reserved.</i>
+        </footer>
+    </div>

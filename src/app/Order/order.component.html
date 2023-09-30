@@ -1,0 +1,36 @@
+<div class="container-fluid ">
+
+
+
+    <div class="col-md-6 " *ngFor="let r of result" id="id1">
+
+        <div class="row">
+            <div class="col-md-3 col-xs-3 " id="divs">
+                <strong>{{r.name}}</strong>
+                <i *ngIf='r.type==="veg"' class="fa fa-square" style="color:green;"></i>
+
+                <i *ngIf='r.type==="nonveg"' class="fa fa-square" style="color:red;"></i>
+
+
+                <h5><strong>&#8377;{{r.price}}</strong></h5>
+            </div>
+            <div class="col-md-5 " id="divs">
+                <p>{{r.description}}</p>
+                <h5><strong>Ingredients: </strong>{{r.ingredients}}</h5>
+                <h5><strong>Toppings: </strong>{{r.topping}}</h5>
+
+            </div>
+            <div class="col-md-3 text-center" id="divs">
+                <img class="img-responsive box-center" align="center" src={{r.image}} id="imgs">
+                <button class="btn btn-warning" (click)=cart(r.name,r.price,r.type)>Add to Cart</button>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+
+
+</div>

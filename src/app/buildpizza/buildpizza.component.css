@@ -1,0 +1,33 @@
+#imgs {
+    width: 80px;
+    height: 80px
+}
+
+th {
+    width: 20%;
+}
+
+table {
+    width: 60%
+}
+
+#id1 {
+    color: rgb(23, 77, 228)
+}
+
+label {
+    color: orange
+}
+
+.stack {
+    width: 100%;
+}
+
+#align {
+    text-align: center;
+}
+
+#btncolor {
+    background-color: black;
+    color: orange;
+}

@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="text-center container-fluid table-responsive">
+        <p>At Pizza Chef we not only make fantastic pizzas, we also offer wraps, sandwiches, salads, appetizers, sides, burgers, pasta and desserts, all made to perfection.</p>
+
+        <table class="table table-striped table-hover" border="1" align="center">
+            <tbody>
+                <tr *ngFor="let t of toppings">
+                    <td><img src="{{t.image}}" id="imgs"></td>
+                    <td><strong>{{t.tname}} &#8377;{{t.price}}</strong></td>
+                    <td>
+
+                        <input type="checkbox" name="Add" id="" (click)="change(t.price, $event)">
+                        <label>Add</label>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <strong id="id1">Total Price:{{value}}</strong>
+
+
+        <br>
+        <button id="btncolor" href="#" role="button" [routerLink]="['/cart',value]">Build Your Pizza!</button>
+
+    </div>
+
+</div>
+<router-outlet></router-outlet>
